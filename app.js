@@ -1,35 +1,31 @@
 
-function pesquisar() {
+function pesquisar() {  //Função para pesquisar os doramas 
 
-      let section = document.getElementById("resultados-pesquisa"); //Esta é a foma que conseguimos acessar as informações que estão no HTML/
+      let section = document.getElementById("resultados-pesquisa"); //Esta é a forma que conseguimos acessar as informações que estão no HTML/
 
       let campoPesquisa = document.getElementById("campo-pesquisa").value
 
       let resultados = "";
 
       if (campoPesquisa == " ") {
-            section.innerHTML = "<p> Pesquisa Vazia</P>"
+            section.innerHTML = "<p>Pesquisa Vazia</P>"
             return
       }
 
       if (campoPesquisa.length <= 2) {
-            section.innerHTML = "<p> Digite mais de 2 caracteres</P>"
+            section.innerHTML = "<p>Digite mais de 2 caracteres</P>"
             return
       }
 
-
       var doramasEncontrados = dados.filter(function (dorama) {
-            return dorama.titulo.toLowerCase().includes(campoPesquisa.toLowerCase());
-      });
-
-      
-
+            return dorama.genero.toLowerCase().includes(campoPesquisa.toLowerCase()); //"toLowerCase()"Torna tudo minusculo para comparar e encontrar os doramas
+      });               //era titulo
 
 
       for (let dado of dados) {
             console.log(campoPesquisa.length)
             // o "+" dentro do resultados += significa que ele vai listar tudo que temos no nosso "dados.js"
-            if (dado.titulo.toLowerCase().includes(campoPesquisa.toLowerCase()) || dado.sinopse.toLowerCase().includes(campoPesquisa.toLowerCase())) {
+            if (dado.genero.toLowerCase().includes(campoPesquisa.toLowerCase()) ) {  //|| dado.sinopse.toLowerCase().includes(campoPesquisa.toLowerCase())
                   resultados += `  
                   <div class="item-resultado">
             
@@ -45,7 +41,7 @@ function pesquisar() {
       }
 
       section.innerHTML = resultados;
-      
+
       console.log(doramasEncontrados);
       if (doramasEncontrados.length == 0) {
             resultados += `<p> Não encontrei o dorama pesquisado</P>`
@@ -55,27 +51,22 @@ function pesquisar() {
 
 
 
-
-
-
-
-
-function exibirGeneros() {
+function exibirGeneros() {   //Função para exibir todos generos do nosso "banco"
       const generosUnicos = new Set();
       dados.forEach(dorama => {
-          generosUnicos.add(dorama.genero);
+            generosUnicos.add(dorama.genero);
       });
-  
-      const listaGeneros = document.createElement('ul');
+
+      const listaGeneros = document.createElement('ul'); //cria uma lista 
       generosUnicos.forEach(genero => {
-          const itemLista = document.createElement('li');
-          itemLista.textContent = genero;
-          listaGeneros.appendChild(itemLista);
+            const itemLista = document.createElement('li');
+            itemLista.textContent = genero;
+            listaGeneros.appendChild(itemLista);
       });
-  
-      // Encontre o elemento onde você quer inserir a lista de gêneros
-      const containerGeneros = document.getElementById('container-generos'); // Crie um elemento com esse ID no seu HTML
-      containerGeneros.appendChild(listaGeneros);
-  }
-  
-  exibirGeneros();
+
+      // Encontra o elemento onde você quer inserir a lista de gêneros
+      const containerGeneros = document.getElementById('container-generos');
+      containerGeneros.appendChild(listaGeneros); //appendChild(listaGeneros) significa "adicionar como filho".
+}
+
+exibirGeneros();

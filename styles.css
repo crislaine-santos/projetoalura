@@ -1,144 +1,29 @@
 ﻿body {
     display: flex;
-    /**/
     flex-direction: column;
     justify-content: center;
     align-items: center;
     text-align: center;
-    min-height: 100vh;
-    /* Garante que o corpo ocupe pelo menos a altura da viewport */
-    margin: 0;
-    /*esses dois são para tirar aqueles espaço que fica entre a imagem e aborda ad tela*/
+    min-height: 100vh; /* Garante que o corpo ocupe pelo menos a altura da viewport */  
+    margin: 0; /*esses dois são para tirar aqueles espaço que fica entre a imagem e aborda ad tela*/
     padding: 0;
     background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.8)), url("fotoDrama.png");
     background-size: cover;
 }
 
-main {
-    display: flex;
-    /**/
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    min-height: 100vh;
-    /* Garante que o corpo ocupe pelo menos a altura da viewport */
-
-}
-
 h1 {
-    font-size: 2.5rem;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 2.6rem; 
     color: antiquewhite;
+    font-family: "Playwrite CU", cursive;
+    font-optical-sizing: auto;
+    font-style: normal;
 }
 
 p {
-    font-size: 1.0rem;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 1.2rem;
+    font-family: "Playpen Sans", cursive;
     color: antiquewhite;
 }
-
-input {
-    width: 25rem;
-    /* Largura dos inputs */
-    height: 3.3rem;
-    border: none;
-    border-radius: 1.5rem;
-    /*serve para arredondar os cantos de um elemento. */
-    /* margin-bottom: 0.5rem;  Espaçamento abaixo dos inputs */
-    opacity: 0.3;
-    margin: 1.5rem 0;
-    /* Margem acima e abaixo */
-}
-
-button {
-    border: none;
-    border-radius: 1.5rem;
-    height: 2.4rem;
-    background-color: brown;
-
-}
-
-.resultados-pesquisa {
-    width: 60rem;
-    /* Largura máxima da caixa de resultados */
-    height: 46vh;
-    /* Altura máxima da caixa de resultados */
-    overflow-y: auto;
-    /* Adiciona rolagem vertical se necessário */
-    margin-top: 1rem;
-    /* Espaçamento acima da caixa de resultados */
-    padding: 1rem;
-    /* Espaçamento interno */
-    border-radius: 0.6rem;
-    /* Borda arredondada */
-}
-
-/* Estiliza cada item de resultado */
-
-.item-resultado {
-    background: white;
-    /* Cor de fundo dos itens #fcd4d2 */
-    border-radius: 0.6rem;
-    /* Borda arredondada */
-    padding: 1rem;
-    /* Espaçamento interno */
-    margin-bottom: 1rem;
-    /* Espaçamento abaixo dos itens */
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    /* Sombra leve */
-}
-
-.item-resultado h2 {
-    font-size: 25px;
-    color: black
-}
-
-/* Estiliza os links quando são passados o mouse sobre */
-
-.item-resultado a:hover {
-    text-decoration: underline;
-    /* Adiciona sublinhado ao passar o mouse */
-}
-
-
-
-.item-resultado a {
-    text-decoration: none;
-    /* Remove o sublinhado padrão dos links */
-    color: #30475E;
-    /* Cor do texto dos links */
-
-}
-
-/* Estiliza a descrição meta dentro dos itens de resultado */
-
-.descricao-meta {
-    color: #302f2f;
-    margin: 0.5rem 0;
-    /* Margem acima e abaixo */
-
-}
-
-h3 {
-    font-size: 12px;
-    color: dimgray;
-}
-
-footer {
-    background-color: lavender;
-    padding: 10px;
-    width: 100%;
-    /* Largura total da página */
-    padding: 0;
-    /* Espaçamento interno */
-
-}
-
-
-
-
-
 
 #container-generos {
     list-style: none;
@@ -149,6 +34,118 @@ footer {
     display: inline-block;
     margin: 5px;
     padding: 10px;
-    background-color: #f0f0f0;
-    border-radius: 5px;
+    background-color: #ffbdbd;
+    border-radius: 0.7rem;
+    font-family: "Playpen Sans", cursive;
+    font-size: 0.9rem;
+    
 }
+
+input {
+    width: 25rem; /* Largura dos inputs */
+    height: 3.3rem;
+    border: none;
+    border-radius: 1.5rem; /*serve para arredondar os cantos de um elemento. */
+    margin-bottom: 0.5rem;  /*Espaçamento abaixo dos inputs */
+    opacity: 0.3;
+    margin: 1.5rem 0; /* Margem acima e abaixo */
+    font-family: "Playpen Sans", cursive;
+   
+}
+
+button {
+    border: none;
+    border-radius: 1.5rem;
+    height: 2.4rem;
+    background-color: brown;
+    font-family: "Playpen Sans", cursive;
+
+}
+
+.resultados-pesquisa {
+    width: 60rem;    /* Largura máxima da caixa de resultados */
+    height: 40vh;    /* Altura máxima da caixa de resultados */
+    overflow-y: auto;    /* Adiciona rolagem vertical se necessário */
+    margin-top: 1rem;    /* Espaçamento acima da caixa de resultados */
+    padding: 1rem;    /* Espaçamento interno */
+    border-radius: 0.6rem;    /* Borda arredondada */
+}
+
+/* Estiliza cada item de resultado */
+
+.item-resultado {
+    background: white;    /* Cor de fundo dos itens  */
+    border-radius: 0.6rem;    /* Borda arredondada */
+    padding: 1rem;    /* Espaçamento interno */
+    margin-bottom: 1rem;    /* Espaçamento abaixo dos itens */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);    /* Sombra leve */
+}
+
+.item-resultado h2 {
+    font-size: 25px;
+    color: black
+}
+
+/* Estiliza os links quando são passados o mouse sobre */
+.item-resultado a:hover { 
+    text-decoration: underline; /* Adiciona sublinhado ao passar o mouse */  
+}
+
+
+
+.item-resultado a {
+    text-decoration: none; /* Remove o sublinhado padrão dos links */  
+    color: blueviolet;    /* Cor do texto dos links */
+
+}
+
+/* Estiliza a descrição meta dentro dos itens de resultado */
+.descricao-meta {
+    color: #302f2f;
+    margin: 0.5rem 0;/* Margem acima e abaixo */    
+
+}
+
+h3 {
+    font-size: 13px;
+    color: dimgray;
+    margin-right: 15px;
+}
+
+footer {
+    position: absolute;
+    bottom: 0;
+    background-color: lavender;
+    padding: 10px;
+    width: 100%; /* Largura total da página */  
+    padding: 0;/* Espaçamento interno */   
+}
+
+.footer-content {
+    display: flex; /* Exibe os itens em linha */
+    justify-content: center; /* Espaço ao redor dos itens */
+    align-items: center; /* Centraliza os itens verticalmente */
+    text-align: center; /* Centraliza o texto */
+}
+
+/* Estilos para ícones sociais no rodapé */
+.social-icons {
+    display: flex; /* Exibe os ícones em linha */
+    gap: 12px; /* Espaçamento entre os ícones */
+}
+
+/* Estilos para cada ícone social */
+.social-icon {
+    width: 24px; /* Largura do ícone */
+    height: 24px; /* Altura do ícone */
+    transition: transform 0.3s ease; /* Transição suave para transformações */
+}
+.social-icon:hover {
+    transform: scale(1.1); /* Aumenta o ícone ao passar o mouse "1.1" indica que será aumentado em 10% em relação ao seu tamanho */
+}
+
+
+
+
+
+

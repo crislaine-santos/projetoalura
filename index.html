@@ -6,23 +6,17 @@
     <title>Seu Dorama</title>
     <link rel="stylesheet" href="styles.css">
     <link rel="icon" href="bibimbap.png">
+    <link href="https://fonts.googleapis.com/css2?family=Playwrite+CU:wght@100..400&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Playpen+Sans:wght@100..800&family=Playwrite+CU:wght@100..400&display=swap" rel="stylesheet">
 </head>
 
 <body>
     <main>
         <h1> Melhores Séries Coreanas de acordo com seu gosto </h1>
         <p>
-            Digite seu genêro de série favorito e veja quais são os melhores
+            Digite seu genêro de série favorito e veja quais são os melhores da categoria !
         </p>
-
-
-
-        <section id="container-generos">
-        </section>
-
-
-
-        
+        <section id="container-generos"> </section>
         <section>
             <input type="text" placeholder="Digite sua pesquisa" id="campo-pesquisa">
             <button onclick="pesquisar()">Buscar Agora</button>
@@ -31,14 +25,24 @@
             <!-- a classe sempre vai referenciar ao arquivo do CSS e o id vai refenciar ao arquivo do JS-->
         </section>
     </main>
-    <footer>
+
+    <footer>   
+      <div class="footer-content">    
         <h3>
-            Contato: dorameiraRaiz@gmail.com - Telefone 85 98752846
+            2024 - Cris Santos - Projeto_AluraGemini
         </h3>
-        <h3>
-            Meu Site 2024 - Todos os direitos Reservados
-        </h3>
+
+        <div class="social-icons">
+            <a href="https://www.linkedin.com/in/cris-santos-carvalho/" target="_blank"> <!-- Link para o LinkedIn -->
+                <img src="https://cdn-icons-png.flaticon.com/512/1051/1051282.png" alt="LinkedIn" class="social-icon"> <!-- Ícone do LinkedIn -->
+            </a>
+            <a href="https://github.com/crislaine-santos" target="_blank"> <!-- Link para o GitHub -->
+                <img src="https://cdn-icons-png.flaticon.com/512/1051/1051275.png" alt="GitHub" class="social-icon"> <!-- Ícone do GitHub -->
+            </a>
+        </div>
+      </div>
     </footer>
+
     <script src="dados.js"></script>
     <script src="app.js"></script>
 </body>
