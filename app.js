@@ -32,7 +32,7 @@ function pesquisar() {  //Função para pesquisar os doramas
                         <h2> 
                         ${dado.titulo} 
                         </h2>
-                  <p class="descricao-meta"> ${dado.sinopse} </p>
+                  <h4 class="descricao-meta"> ${dado.sinopse} </h4>
                   <a href=${dado.link}" target="_blank"> Clique aqui para saber mais </a>
             
                   </div>
