@@ -31,7 +31,7 @@ let dados = [
         titulo: "Alquimia Das Almas",
         sinopse: "A trama gira em torno de Nak-su, uma guerreira habilidosa cuja alma é aprisionada no corpo de Mu-deok, uma jovem cega e fraca. Jang Uk, um jovem mestre de uma família nobre, contrata Mu-deok como sua serva, mas logo descobre o grande potencial mágico que ela esconde. Juntos, eles embarcam em uma jornada repleta de desafios, desvendando mistérios e enfrentando inimigos poderosos.",
         genero: "Romance com Ficção",
-        Link: "https://www.netflix.com/browse?jbv=81517188"
+        link: "https://www.netflix.com/browse?jbv=81517188"
     },
 
     {
