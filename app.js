@@ -17,15 +17,23 @@ function pesquisar() {  //Função para pesquisar os doramas
             return
       }
 
-      var doramasEncontrados = dados.filter(function (dorama) {
-            return dorama.genero.toLowerCase().includes(campoPesquisa.toLowerCase()); //"toLowerCase()"Torna tudo minusculo para comparar e encontrar os doramas
+
+
+      let doramasEncontrados = dados.filter(function (dorama) {
+            console.log(limparTexto(campoPesquisa));            
+            let campoPesquisaLimpo = limparTexto(campoPesquisa);
+            let generoLimpo = limparTexto(dorama.genero);
+            return generoLimpo.includes(campoPesquisaLimpo); //"toLowerCase()"Torna tudo minusculo para comparar e encontrar os doramas
       });               //era titulo
 
 
       for (let dado of dados) {
             console.log(campoPesquisa.length)
             // o "+" dentro do resultados += significa que ele vai listar tudo que temos no nosso "dados.js"
-            if (dado.genero.toLowerCase().includes(campoPesquisa.toLowerCase()) ) {  //|| dado.sinopse.toLowerCase().includes(campoPesquisa.toLowerCase())
+            let campoPesquisaLimpo = limparTexto(campoPesquisa);
+            let generoLimpo = limparTexto(dado.genero);
+
+            if (generoLimpo.includes(campoPesquisaLimpo)) {  
                   resultados += `  
                   <div class="item-resultado">
             
@@ -40,15 +48,24 @@ function pesquisar() {  //Função para pesquisar os doramas
             }
       }
 
-      section.innerHTML = resultados;
-
       console.log(doramasEncontrados);
       if (doramasEncontrados.length == 0) {
             resultados += `<p> Não encontrei o dorama pesquisado</P>`
       }
 
+      section.innerHTML = resultados;
+
+      
+
 }
 
+function limparTexto(texto) {   //"texto" esta fazendo referencia ao campoPesquisa que ele esta limpando.
+      return texto.toLowerCase()
+                  .replace(/\s/g, '')
+                  .normalize('NFD')
+                  .replace(/[\u0300-\u036f]/g, "");
+
+}
 
 
 function exibirGeneros() {   //Função para exibir todos generos do nosso "banco"

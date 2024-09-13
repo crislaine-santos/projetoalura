@@ -49,9 +49,9 @@ input {
     border: none;
     border-radius: 1.5rem; /*serve para arredondar os cantos de um elemento. */
     margin-bottom: 0.5rem;  /*Espaçamento abaixo dos inputs */
-    opacity: 0.3;
+    opacity: 0.5;
     margin: 1.5rem 0; /* Margem acima e abaixo */
-    font-family: "Playpen Sans", cursive;
+    font-family: "Playpen Sans", cursive;   
    
 }
 
