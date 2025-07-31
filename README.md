@@ -1,20 +1,37 @@
-Meu primeiro projeto onde fiz uma página junto com a Imerção da Alura_Google Gemini, com um dos temas que mais sou apaixonada, Doramas. 
+# 🎬 Minha Página de Doramas Favoritos
 
-O site te mostra os melhores doramas (na minha opinião haha) de acordo com seu gênero preferido de série. 
-Basta escolher um do gêneros disponíveis e buscar..
+### ✨ [Explore a Página Online!](https://crislaine-santos.github.io/projetoalura/) ✨
+---
 
-Na criação dessa página, utilizei uma combinação de:
+### 💖 Sobre o Projeto
 
-HTML:
-Estruturação do layout da página, com a criação de elementos como  header, main, section, e footer.
-Uso de tags de formatação para exibir títulos, parágrafos e entradas de texto.
-Integração de bibliotecas de fontes personalizadas e ícones sociais​(index).
+Este é o meu **primeiro projeto de desenvolvimento web**, criado com suporte da **Imersão Alura & Google Gemini**. Desenvolvi uma página focada em: **doramas**!
 
-CSS:
-Estilização de elementos com flexbox para garantir uma disposição responsiva e centrada dos componentes da página.
-Aplicação de gradientes no background e bordas arredondadas em botões e resultados de pesquisa.
-Animação dos ícones sociais com transições suaves ao passar o mouse​(styles).
+A ideia é simples e divertida: o site te ajuda a encontrar os **melhores doramas (na minha opinião!)** de acordo com o seu gênero preferido. Basta escolher um dos gêneros disponíveis, digitar e buscar! É uma maneira de compartilhar meus gostos e demonstrar minhas habilidades básicas com desenvolvimento front-end.
 
-JavaScript:
-Criação de funções para buscar e filtrar doramas com base no gênero digitado pelo usuário.
-Manipulação do DOM para exibir os resultados de pesquisa de forma dinâmica, e uso de funções para limpar e normalizar o texto de pesquisa​(app).
+---
+
+### 🚀 Funcionalidades Principais
+
+* **Busca por Gênero:** Filtre doramas rapidamente ao digitar o seu gênero preferido.
+* **Interface Intuitiva:** Experiência de usuário simples e direta para encontrar seu próximo drama.
+
+---
+
+### 🛠️ Tecnologias Utilizadas
+
+Este projeto foi construído utilizando as seguintes tecnologias fundamentais do desenvolvimento web:
+
+* **HTML:** Para estruturar todo o layout da página, desde o cabeçalho (`<header>`) e seções principais (`<main>`, `<section>`) até o rodapé (`<footer>`). Garante a semântica e acessibilidade do conteúdo.
+* **CSS:** Responsável por toda a estilização e responsividade da página.
+    * Utilização de **Flexbox** para criar layouts flexíveis e centralizar componentes.
+    * Aplicação de **gradientes** vibrantes no background e **bordas arredondadas** para um visual moderno.
+    * **Animações e transições suaves** nos ícones sociais para uma experiência interativa ao passar o mouse.
+* **JavaScript:** A inteligência por trás da interatividade.
+    * Implementação de funções para **buscar e filtrar doramas** dinamicamente com base na entrada do usuário.
+    * **Manipulação do DOM** para exibir os resultados da pesquisa em tempo real.
+    * Funções para **limpar e normalizar** o texto de pesquisa, garantindo resultados precisos.
+
+---
+
+Adoraria me conectar e receber feedback!
