@@ -4,17 +4,29 @@
     justify-content: center;
     align-items: center;
     text-align: center;
-    min-height: 100vh; /* Garante que o corpo ocupe pelo menos a altura da viewport */  
-    margin: 0; /*esses dois são para tirar aqueles espaço que fica entre a imagem e aborda ad tela*/
+    min-height: 100vh; 
+    margin: 0; 
     padding: 0;
-    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.8)), url("fotoDrama.png");
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.8)), url("./imagens/fotoDrama.png");
     background-size: cover;
+}
+
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+    background: rgb(177, 107, 131);
+}
+
+::-webkit-scrollbar-track {
+    background: gray;
 }
 
 h1 {
     font-size: 2.2rem; 
     color: antiquewhite;
-    text-align: center; /* Alinha o texto ao centro */
+    text-align: center; 
     font-family: "Playwrite CU", cursive;
     font-optical-sizing: auto;
     font-style: normal;
@@ -44,13 +56,13 @@ p {
 }
 
 input {
-    width: 25rem; /* Largura dos inputs */
+    width: 25rem; 
     height: 3.3rem;
     border: none;
-    border-radius: 1.5rem; /*serve para arredondar os cantos de um elemento. */
-    margin-bottom: 0.5rem;  /*Espaçamento abaixo dos inputs */
+    border-radius: 1.5rem; 
+    margin-bottom: 0.5rem;  
     opacity: 0.5;
-    margin: 1.5rem 0; /* Margem acima e abaixo */
+    margin: 1.5rem 0; 
     font-family: "Playpen Sans", cursive;   
    
 }
@@ -65,25 +77,23 @@ button {
 }
 
 .resultados-pesquisa {
-    width: 60rem;    /* Largura máxima da caixa de resultados */
-    height: 40vh;    /* Altura máxima da caixa de resultados */
-    overflow-y: auto;    /* Adiciona rolagem vertical se necessário */
+    width: 60rem;    
+    height: 40vh;    
+    overflow-y: auto;    
     
-    padding: 1rem;    /* Espaçamento interno */
-    border-radius: 0.6rem;    /* Borda arredondada */
-    display: flex; /* Usa Flexbox para layout */
-    flex-direction: column; /* Alinha os itens na vertical */
-    align-items: center; /* Centraliza os itens horizontalmente */
+    padding: 1rem;    
+    border-radius: 0.6rem;    
+    display: flex; 
+    flex-direction: column; 
+    align-items: center;
 }
 
-/* Estiliza cada item de resultado */
-
 .item-resultado {
-    background: white;    /* Cor de fundo dos itens  */
-    border-radius: 0.6rem;    /* Borda arredondada */
-    padding: 1rem;    /* Espaçamento interno */
-    margin-bottom: 1rem;    /* Espaçamento abaixo dos itens */
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);    /* Sombra leve */
+    background: white;    
+    border-radius: 0.6rem;   
+    padding: 1rem;    
+    margin-bottom: 1rem;   
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);   
     
 }
 
@@ -92,23 +102,22 @@ button {
     color: black
 }
 
-/* Estiliza os links quando são passados o mouse sobre */
-.item-resultado a:hover { 
-    text-decoration: underline; /* Adiciona sublinhado ao passar o mouse */  
+.item-resultado a:hover {   
+    color: purple;
+    transition: .4s;
+    cursor: pointer;
 }
-
-
 
 .item-resultado a {
-    text-decoration: none; /* Remove o sublinhado padrão dos links */  
-    color: blueviolet;    /* Cor do texto dos links */
+    text-decoration: none; 
+    color: rgb(153, 100, 202);   
 
 }
 
-/* Estiliza a descrição meta dentro dos itens de resultado */
+
 .descricao-meta {
     color: #302f2f;
-    margin: 0.5rem 0;/* Margem acima e abaixo */  
+    margin: 0.5rem 0;
     font-size: 1.2rem;  
 
 }
@@ -124,31 +133,29 @@ footer {
     bottom: 0;
     background-color: lavender;
     padding: 10px;
-    width: 100%; /* Largura total da página */  
-    padding: 0;/* Espaçamento interno */   
+    width: 100%;  
+    padding: 0;   
 }
 
 .footer-content {
-    display: flex; /* Exibe os itens em linha */
-    justify-content: center; /* Espaço ao redor dos itens */
-    align-items: center; /* Centraliza os itens verticalmente */
-    text-align: center; /* Centraliza o texto */
+    display: flex; 
+    justify-content: center;
+    align-items: center; 
+    text-align: center; 
 }
 
-/* Estilos para ícones sociais no rodapé */
 .social-icons {
-    display: flex; /* Exibe os ícones em linha */
-    gap: 12px; /* Espaçamento entre os ícones */
+    display: flex; 
+    gap: 12px; 
 }
 
-/* Estilos para cada ícone social */
 .social-icon {
-    width: 24px; /* Largura do ícone */
-    height: 24px; /* Altura do ícone */
-    transition: transform 0.3s ease; /* Transição suave para transformações */
+    width: 24px; 
+    height: 24px; 
+    transition: transform 0.3s ease;
 }
 .social-icon:hover {
-    transform: scale(1.1); /* Aumenta o ícone ao passar o mouse "1.1" indica que será aumentado em 10% em relação ao seu tamanho */
+    transform: scale(1.1); 
 }
 
 

@@ -102,5 +102,33 @@ let dados = [
         sinopse: "coloca oito estranhos em uma situação extrema, testando seus limites físicos e psicológicos. A premissa é simples, mas a execução é cheia de suspense e reviravoltas. Oito pessoas, cada uma com suas próprias motivações e dívidas, são convidadas a participar de um jogo com um prêmio milionário. Confinados em um prédio de oito andares, eles precisam sobreviver por 100 dias para dividir o prêmio. No entanto, a cada dia que passa, o desafio aumenta.",
         genero: "Drama e Vingança ",
         link: "https://www.netflix.com/search?q=series%20corenanas%20&jbv=81719583"
+    },
+
+    {
+        titulo: "Uma Seul Desconhecida",
+        sinopse: "Yoo Mi-ji é uma ex-atleta que vive de empregos temporários e se sente um fracasso. Já sua irmã gêmea, Yoo Mi-rae, é uma funcionária de escritório perfeccionista em Seul, mas secretamente sofre com bullying no trabalho. Quando Mi-ji descobre a situação da irmã, as duas fazem uma ousada proposta: trocar de lugar.",
+        genero: "Drama e Vingança ",
+        link: "https://www.netflix.com/browse?jbv=82024804"
+    },
+
+    {
+        titulo: "Se a Vida Te Der Tangerinas",
+        sinopse: "A história foca em Ae-soon, uma jovem sonhadora e rebelde que adora poesia, e Gwan-sik, um rapaz reservado e dedicado que é apaixonado por ela.O drama explora o crescimento dos dois e o relacionamento deles ao longo do tempo. Ae-soon é impulsiva e emotiva, enquanto Gwan-sik é o oposto, expressando seus sentimentos através de ações e cuidado silencioso. A série acompanha as dificuldades que eles enfrentam, tanto pessoais quanto sociais, na Coreia daquela época.",
+        genero: "Romance ",
+        link: "https://www.netflix.com/browse?jbv=81681535"
+    },
+
+    {
+        titulo: "Pretendente Surpresa",
+        sinopse: "Comédia romântica que acompanha a história de Shin Ha-ri, uma funcionária de escritório que se disfarça para ir a um encontro às cegas no lugar de sua melhor amiga. O objetivo é assustar o pretendente para que ele desista, mas o plano dá errado quando ela descobre que o homem é Kang Tae-mu, o CEO da sua própria empresa.O problema se intensifica quando Tae-mu, cansado da pressão de sua família para se casar, decide se casar com a pretendente falsa, sem saber que na verdade ela é sua funcionária.",
+        genero: "Romance e Comedia ",
+        link: "https://www.netflix.com/browse?jbv=81509440"
+    },
+
+    {
+        titulo: "Classe dos Heróis Fracos",
+        sinopse: "Aprofunda-se nos temas de bullying e violência escolar. O protagonista é Yeon Si-eun, um estudante exemplar, fisicamente frágil, que usa sua inteligência e raciocínio estratégico para se defender e lutar contra os valentões da escola. A trama se intensifica quando Si-eun, apesar de sua aparência fraca, começa a revidar. Sua abordagem única — que consiste em analisar os oponentes e o ambiente para encontrar pontos fracos — o coloca em um caminho de confronto direto com o sistema violento de sua escola.",
+        genero: "Drama e Vingança ",
+        link: "https://www.netflix.com/browse?jbv=81509440"
     }
 ];
